@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     */}
-        <title>Marl's Portfolio</title>
+        <title>Marl&apos;s Portfolio</title>
       </head>
 
       <body className={`${inter.className} antialiased bg-gray-100 text-gray-600`}>
