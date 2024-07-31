@@ -8,7 +8,6 @@ export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className="flex items-center h-20 shrink-0 rounded-lg bg-blue-500 p-4">
-        <div className="flex w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black" />
         <MainLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
