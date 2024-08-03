@@ -1,0 +1,9 @@
+.next/*
+.cache/*
+.vscode/*
+assets/*
+db/*
+dist/*
+docker/*
+node_modules/*
+releases/**
