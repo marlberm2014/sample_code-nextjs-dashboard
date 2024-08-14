@@ -48,13 +48,31 @@ export async function fetchLatestInvoices() {
   }
 }
 
+export async function countInvoices() {
+  try {
+    return sql`SELECT COUNT(*) FROM invoices`;
+  } catch (err) {
+    console.error("Database Error:", err);
+    throw new Error("Failed to count invoices.");
+  }
+}
+
+export async function countCustomers() {
+  try {
+    return sql`SELECT COUNT(*) FROM customers`;
+  } catch (err) {
+    console.error("Database Error:", err);
+    throw new Error("Failed to count customers.");
+  }
+}
+
 export async function fetchCardData() {
   try {
     // You can probably combine these into a single SQL query
     // However, we are intentionally splitting them to demonstrate
     // how to initialize multiple queries in parallel with JS.
-    const invoiceCountPromise = sql`SELECT COUNT(*) FROM invoices`;
-    const customerCountPromise = sql`SELECT COUNT(*) FROM customers`;
+    const invoiceCountPromise = countInvoices();
+    const customerCountPromise = countCustomers();
     const invoiceStatusPromise = sql`SELECT
          SUM(CASE WHEN status = 'paid' THEN amount ELSE 0 END) AS "paid",
          SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) AS "pending"
