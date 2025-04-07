@@ -5,7 +5,8 @@
     "dev": "next dev",
     "start": "next start",
     "watch": "next",
-    "prettier": "prettier --config .prettierrc --write \"**/*.{html,scss,ts,tsx,json}\" --end-of-line auto"
+    "prettier": "prettier --config .prettierrc --write \"**/*.{html,scss,ts,tsx,json}\" --end-of-line auto",
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
@@ -35,6 +36,7 @@
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.4",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "prettier": "^3.3.2"
   },
   "engines": {
