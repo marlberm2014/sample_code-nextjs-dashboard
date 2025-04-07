@@ -7,7 +7,7 @@ export default function SideNav() {
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
       <Link
-        className="mb-2 flex h-25 shrink-1 justify-center rounded-md bg-blue-500 p-4 md:justify-start md:shrink-0"
+        className="group mb-2 flex h-25 shrink-1 justify-center rounded-md bg-white p-4 md:justify-start md:shrink-0 hover:bg-sky-500"
         href="/"
       >
         <div className="w-80 md:w-40">
