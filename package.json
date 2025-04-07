@@ -5,7 +5,7 @@
     "dev": "next dev",
     "start": "next start",
     "watch": "next",
-    "prettier": "prettier --config .prettierrc --write \"**/*.{html,scss,ts,json}\" --end-of-line auto"
+    "prettier": "prettier --config .prettierrc --write \"**/*.{html,scss,ts,tsx,json}\" --end-of-line auto"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
@@ -17,6 +17,7 @@
     "next": "15.3.0-canary.24",
     "next-auth": "5.0.0-beta.19",
     "postcss": "8.4.38",
+    "postgres": "^3.4.5",
     "react": "19.0.0-rc-f38c22b244-20240704",
     "react-dom": "19.0.0-rc-f38c22b244-20240704",
     "tailwindcss": "3.4.4",
