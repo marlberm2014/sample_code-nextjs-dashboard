@@ -3,21 +3,27 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 import Image from "next/image";
+import { SocialIcon } from "react-social-icons";
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      <div className="flex items-center h-20 shrink-0 rounded-lg bg-blue-500 p-4">
+      <div className="flex items-center h-30 shrink-0 rounded-lg bg-sky-300 p-4">
         <MainLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
           <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Welcome to Acme.</strong> This is the example for the{" "}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
+            <strong>Portfolio of Marl Bermudo.</strong>
+            <br />
+            Visit my work profile in{" "}
+            <a href="https://www.linkedin.com/in/marl-bermudo/" className="text-blue-500">
+              LinkedIn <SocialIcon href="https://www.linkedin.com/in/marl-bermudo/" url="www.linkedin.com" />
             </a>
-            , brought to you by Vercel.
+            ,{" "}
+            <a href="https://github.com/marlberm2014" className="text-blue-500">
+              Github <SocialIcon href="https://github.com/marlberm2014" url="www.github.com" />
+            </a>
           </p>
           <Link
             href="/login"
@@ -28,7 +34,7 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           <Image
-            src="/hero-desktop.png"
+            src="/marl-old-logo.png"
             width={1000}
             height={760}
             className="hidden md:block"

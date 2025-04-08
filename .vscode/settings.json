@@ -20,6 +20,9 @@
   },
   "peacock.color": "#05822b",
   "cSpell.words": [
+    "clsx",
+    "heroicons",
     "lusitana"
-  ]
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }
