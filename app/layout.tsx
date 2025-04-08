@@ -1,7 +1,8 @@
-import "@/app/ui/global.css";
-import { inter } from "@/app/ui/fonts";
-
 import { Metadata } from "next";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+import "@/app/ui/global.scss";
+import { inter } from "@/app/ui/fonts";
 
 export const metadata: Metadata = {
   title: {

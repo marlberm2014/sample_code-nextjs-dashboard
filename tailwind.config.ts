@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import { mtConfig } from "@material-tailwind/react";
+import forms from "@tailwindcss/forms";
 
 const config: Config = {
   content: [
@@ -27,6 +29,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [forms, mtConfig],
 };
 export default config;
