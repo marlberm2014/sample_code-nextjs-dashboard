@@ -1,5 +1,6 @@
 {
   "private": true,
+  "version": "1.0.0",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
@@ -10,18 +11,22 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
+    "@material-tailwind/react": "3.0.0-beta.24",
     "@tailwindcss/forms": "^0.5.7",
     "@vercel/postgres": "^0.8.0",
     "autoprefixer": "10.4.19",
     "bcrypt": "^5.1.1",
     "clsx": "^2.1.1",
+    "iconoir-react": "^7.10.1",
     "next": "15.3.0-canary.24",
     "next-auth": "5.0.0-beta.25",
     "postcss": "8.4.38",
     "postgres": "^3.4.5",
     "react": "19.0.0-rc-f38c22b244-20240704",
     "react-dom": "19.0.0-rc-f38c22b244-20240704",
+    "react-image-gallery": "^1.4.0",
     "react-social-icons": "^6.22.0",
+    "sass": "^1.86.3",
     "tailwindcss": "3.4.4",
     "typescript": "5.5.2",
     "use-debounce": "^10.0.1",
@@ -31,14 +36,18 @@
     "@next/eslint-plugin-next": "^14.2.4",
     "@types/bcrypt": "^5.0.2",
     "@types/node": "20.14.8",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
+    "@types/react-image-gallery": "^1.2.4",
     "@typescript-eslint/parser": "^8.29.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "prettier": "^3.3.2"
+  },
+  "resolutions": {
+    "@types/react": "18.2.39"
   },
   "engines": {
     "node": ">=20.12.0"

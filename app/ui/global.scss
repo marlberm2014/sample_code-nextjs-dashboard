@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.socials {
+  a {
+    margin-right: 0.25rem;
+  }
+  & .icon, & > a.social-icon {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  & .square-icon > span > svg {
+    border-radius: 0.25rem !important;
+  }
+  
+}
+
+.home-gallery {
+  &.desktop {
+    .image-gallery-thumbnail img {
+      object-position: center;
+      object-fit: scale-down;
+      height: 80px;
+    }
+
+    .image-gallery-content:not(.fullscreen) .image-gallery-slide .image-gallery-image {
+      height: 500px;
+    }
+  }
+}
